@@ -1,0 +1,23 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+#enviando un valor con todos los campos
+{
+    "content": "Esto es una nueva nota",
+    "important": true
+} 
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+# ingresando un valor sin important
+{
+    "content": "Esto es una nueva nota"   
+}  
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+#enviando un mal request
+
+{} 
