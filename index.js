@@ -83,7 +83,7 @@ app.post('/api/notes',(req,res)=>{
     //una forma de hacerlo
     //notes=[...notes,newNote]
     notes=notes.concat(newNote)
-    res.json(note)
+    res.status(201).json(note)
 })
 //configuramos el servidor en el puerto 3001 forma de acceder localhost:3001
 const PORT = 3001
